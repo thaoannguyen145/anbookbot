@@ -3,7 +3,7 @@ import openai
 import streamlit as st
 
 # Load books
-with open('books_data.json', 'r', encoding='utf-8') as f:
+with open('books_data.json', 'r', encoding='utf-8-sig') as f:
     books = json.load(f)
 
 # Set OpenRouter client
