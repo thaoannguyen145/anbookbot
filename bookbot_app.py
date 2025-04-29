@@ -11,7 +11,7 @@ client = openai.OpenAI(
     api_key=st.secrets["OPENROUTER_API_KEY"],
     base_url="https://openrouter.ai/api/v1",  # <--- Important
     default_headers={
-        "HTTP-Referer": "https://your-app-name.com",  # optional but recommended
+        "HTTP-Referer": "https://anbookbot.streamlit.app/",  # optional but recommended
         "X-Title": "BookBot"  # optional, your app name
     }
 )
