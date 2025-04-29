@@ -8,7 +8,7 @@ with open('books_data.json', 'r', encoding='utf-8') as f:
 
 # Set OpenRouter client
 client = openai.OpenAI(
-    api_key="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",
+    api_key=st.secrets["OPENROUTER_API_KEY"],
     base_url="https://openrouter.ai/api/v1",  # <--- Important
     default_headers={
         "HTTP-Referer": "https://your-app-name.com",  # optional but recommended
